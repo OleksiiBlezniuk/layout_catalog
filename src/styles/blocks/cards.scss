@@ -1,23 +1,10 @@
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  box-sizing: border-box;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 40px;
-
-  &__card {
-    margin-top: 50px;
-  }
-}
-
 .card {
   box-sizing: border-box;
   width: 200px;
   padding: 14px;
   border: 1px solid rgba(243, 243, 243, 1);
   border-radius: 5px;
+  transition-duration: 400ms;
 
   &:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
@@ -27,10 +14,19 @@
     display: block;
     width: 160px;
     height: 134px;
-    margin: 15px auto 45px;
+    margin: 0 auto;
+    padding: 15px 0 0;
+    transition-duration: 400ms;
+    transition-property: transform;
+
+    &:hover {
+      outline: 3px solid rgba(243, 243, 243, 1);
+      transform: scale(120%);
+    }
   }
 
   &__title {
+    margin-top: 45px;
     margin-bottom: 6px;
     line-height: 15px;
     @extend %middle-text;
@@ -70,6 +66,7 @@
     color: white;
     background-color: $main-color;
     border-radius: 5px;
+    transition-duration: 400ms;
 
     &:hover {
       color: $main-color;
