@@ -1,7 +1,7 @@
 .page__header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   height: 60px;
-  flex-direction: row-reverse;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   background-image: url(../images/logo.png);
   background-position: top 10px left 50px;

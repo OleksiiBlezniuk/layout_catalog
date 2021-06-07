@@ -1,5 +1,6 @@
 .nav {
   margin-right: 50px;
+  grid-column: 2;
 
   &__link {
     display: inline-block;
@@ -30,8 +31,8 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
     list-style: none;
     margin: 0;
     padding: 0;
